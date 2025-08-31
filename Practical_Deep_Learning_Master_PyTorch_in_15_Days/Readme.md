@@ -25,4 +25,13 @@ Some more Library packages needed:
 ```
 pip install numpy pandas matplotlib jupyter scikit-learn gradio tqdm huggingface_hub[hf_xet] transformers 
 ```
+=================================
+
+
+
+
+Optimizing Training for Our Neural Network Classifier
+If training a neuron with 500,000 iterations takes too long, try reducing the number of iterations to 250,000 and increasing the learning rate, for example, to 0.025.
+
+When working with networks, it is possible to get stuck in local minima for several iterations or more due to the random initialization of weights and biases. If the loss does not decrease for a significant portion of the iterations, rerunning the model might help. This issue depends on factors such as the number of training iterations, the learning rate, activation functions and the optimizer. To resolve it, experiment with these parameters until a working solution is found.
 
